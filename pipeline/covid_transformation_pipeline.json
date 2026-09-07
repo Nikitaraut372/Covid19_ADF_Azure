@@ -1,0 +1,34 @@
+{
+	"name": "covid_transformation_pipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "df_process_covid_data",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "dataflow_covid",
+						"type": "DataFlowReference"
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-09-06T16:04:15Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

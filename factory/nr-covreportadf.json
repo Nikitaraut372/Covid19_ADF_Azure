@@ -1,0 +1,15 @@
+{
+	"name": "nr-covreportadf",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2eb0985b-a57a-49e8-87f3-587dd92261ac",
+		"tenantId": "c519cef8-a9d3-4e00-8386-2e68a56079c3"
+	}
+}

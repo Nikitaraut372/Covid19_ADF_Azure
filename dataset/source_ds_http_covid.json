@@ -1,0 +1,40 @@
+{
+	"name": "source_ds_http_covid",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_http_covid",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"SourceBaseURL": {
+					"value": "@dataset().sourcebaseURL",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"relativeurl": {
+				"type": "string"
+			},
+			"sourcebaseURL": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@dataset().relativeurl",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
