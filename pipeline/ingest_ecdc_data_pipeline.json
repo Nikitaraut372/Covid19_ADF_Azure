@@ -1,5 +1,5 @@
 {
-	"name": "webtodatalake_covid",
+	"name": "ingest_ecdc_data_pipeline",
 	"properties": {
 		"activities": [
 			{
