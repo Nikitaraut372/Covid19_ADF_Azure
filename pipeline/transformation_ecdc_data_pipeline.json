@@ -1,5 +1,5 @@
 {
-	"name": "covid_transformation_pipeline",
+	"name": "transformation_ecdc_data_pipeline",
 	"properties": {
 		"activities": [
 			{
