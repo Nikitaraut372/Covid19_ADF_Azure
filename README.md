@@ -61,6 +61,3 @@ Population by age data — reference dataset (population_by_age.tsv.gz), sourced
 3. [Transform Python File](mage-files/transform.py)
 
 
-## Complete Video Tutorial
-Video Link - https://www.youtube.com/watch?v=WpQECq5Hx9g
-
