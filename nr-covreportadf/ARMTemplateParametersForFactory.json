@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "nr-covreportadf"
 		},
+		"AzureBlobStorage_covidreporting_connectionString": {
+			"value": ""
+		},
 		"AzureDataLakeStorage1_accountKey": {
 			"value": ""
 		},
