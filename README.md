@@ -4,7 +4,7 @@
 This project implements an end-to-end data engineering pipeline on Azure to ingest, process, and report on COVID-19 data. It combines case, death, hospital admissions, and testing data published by the ECDC (European Centre for Disease Prevention and Control) with population reference data, producing clean, analysis-ready datasets and an interactive Power BI dashboard.
 
 ## Architecture
-
+![Project Architecture](architecture_image.png)
 
 ## Technology Used
 
@@ -27,20 +27,33 @@ This project implements an end-to-end data engineering pipeline on Azure to inge
 
 ADF is used for ingestion, orchestration, scheduling, monitoring, and pipeline dependencies. Azure Databricks provides Spark-based processing for scalable transformation workloads.
 
-**Modern data Pipeline Tool:** https://www.mage.ai/
-
-**Contribute to this project here:** https://github.com/mage-ai/mage-ai
-
 ## Dataset Used
 ECDC COVID-19 datasets (cases & deaths, hospital & ICU admissions, testing rates, country response measures) — publicly published by the European Centre for Disease Prevention and Control, ingested via HTTP connector
 Population by age data — reference dataset (population_by_age.tsv.gz), sourced from Eurostat, loaded from Azure Blob Storage
 
 ### More Info About Dataset
-1. Original Data Source - https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
-2. Data Dictionary - https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf
+1. Population by age data- [population_by_age.tsv.gz](population_by_age.tsv.gz)
+2. ECDC datasets
+    - [cases_deaths.csv](cases_deaths.csv)
+    - [hospital_admissions.csv](hospital_admissions.csv)
+    - [country_response.csv](country_response.csv)
+    - [testing.csv](testing.csv)
+   
 
-## Data Model
-![Data model image](data_model.jpeg)
+## Data Model Diagram
+![datamodel.png](datamodel.png)
+
+## Data ingestion pipeline
+
+<img width="1000" height="750" alt="image" src="https://github.com/user-attachments/assets/d998bbb1-1ffd-4270-99f8-cb8ddf1def9e" />
+
+
+
+
+## Data Flow transformation worklfow
+
+<img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/a75cf673-a8a8-4f5f-87b3-45654dad57ae" />
+
 
 ## Scripts for project
 1. [Extract Python File](mage-files/extract.py)
