@@ -1,4 +1,4 @@
-# Covid19_ADF_Azure | Data Engineering Azure Project
+# Covid19_ADF_Azure_project | Data Engineering Azure Project
 
 ## Introduction
 This project implements an end-to-end data engineering pipeline on Azure to ingest, process, and report on COVID-19 data. It combines case, death, hospital admissions, and testing data published by the ECDC (European Centre for Disease Prevention and Control) with population reference data, producing clean, analysis-ready datasets and an interactive Power BI dashboard.
